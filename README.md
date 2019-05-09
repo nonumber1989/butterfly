@@ -1,0 +1,3 @@
+# butterfly
+
+mybatis generator butterfly
