@@ -1,4 +1,4 @@
-package com.scalpels.fountain.entity;
+package com.originoo.fountain.entity;
 
 import java.util.Date;
 
@@ -9,9 +9,9 @@ public class BaseEntity {
 
     private Date createdOn;
 
-    private String lastModifiedBy;
+    private String modifiedBy;
 
-    private Date lastModifiedOn;
+    private Date modifiedOn;
 
     public Long getId() {
         return id;
@@ -37,19 +37,19 @@ public class BaseEntity {
         this.createdOn = createdOn;
     }
 
-    public String getLastModifiedBy() {
-        return lastModifiedBy;
+    public String getModifiedBy() {
+        return modifiedBy;
     }
 
-    public void setLastModifiedBy(String lastModifiedBy) {
-        this.lastModifiedBy = lastModifiedBy;
+    public void setModifiedBy(String modifiedBy) {
+        this.modifiedBy = modifiedBy;
     }
 
-    public Date getLastModifiedOn() {
-        return lastModifiedOn;
+    public Date getModifiedOn() {
+        return modifiedOn;
     }
 
-    public void setLastModifiedOn(Date lastModifiedOn) {
-        this.lastModifiedOn = lastModifiedOn;
+    public void setModifiedOn(Date modifiedOn) {
+        this.modifiedOn = modifiedOn;
     }
 }
