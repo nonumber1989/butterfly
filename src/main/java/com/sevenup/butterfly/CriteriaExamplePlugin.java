@@ -69,9 +69,7 @@ public class CriteriaExamplePlugin extends PluginAdapter {
         //generate the final condition
         List<IntrospectedColumn> allColumns = introspectedTable.getAllColumns();
         allColumns.stream().map(column -> {
-            Field field = new Field();
-            field.setName(column.getJavaProperty());
-            field.setType(FullyQualifiedJavaType.getStringInstance());
+            Field field = new Field(column.getJavaProperty(),FullyQualifiedJavaType.getStringInstance());
             field.setInitializationString("\"" + column.getActualColumnName() + "\"");
             field.setVisibility(JavaVisibility.PUBLIC);
             field.setStatic(true);
